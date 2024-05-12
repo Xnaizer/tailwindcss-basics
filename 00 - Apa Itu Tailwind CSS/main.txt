@@ -1,0 +1,49 @@
+Tailwind adalah utility css yang di pack menjadi class", dimana kita akan
+menggunakan tailwind dengan memanggil nama" class yang sudah dideklarasikan.
+
+" rapidly build modern websites without leaving your html " 
+
+Berbeda dengan bootstrap yang cssnya sudah memiliki model dan siap digunakan 
+tailwind ini class" khusus untuk mempersingkat penulisan code pada css dan tidak 
+memiliki model khusus. oleh karenanya, tailwind digunakan hampir mirip seperti 
+memakai css hanya saja lebih cepat karna sudah dibungkus menjadi class.
+
+Dibuat oleh Adam Wathan 1 nov 2017
+
+Features :
+    - interactivity
+    - Responsive Design
+    - Dark Mode 
+    - Reusability
+    - Custom Styles
+    - Functions & Directives
+
+Perbedaan CSS vs Bootstrap vs Tailwind
+
+	CSS :
+	  - Full Control
+	  - Code CSS lebih optimal
+	  - Pembuatan lebih lama
+	  - From scratch
+
+	Bootstrap :
+	  - Pembuatan sangat cepat
+	  - Beginner friendly
+	  - Komponen siap digunakan
+	  - No Control
+	  - Banyak code css tak terpakai
+	  - Pengguna Bootstrap Websitenya relative mirip
+
+	Tailwind :
+	  - Code CSS optimal
+	  - Pembuatan lebih cepat
+	  - code HTML jadi jelek karna berantakan
+	  - Mengikuti best practices    
+
+
+Pre - Requisite
+   - Html
+   - Css
+   - Bootstrap ( optional )
+   - Css pre-processor
+   - NPM

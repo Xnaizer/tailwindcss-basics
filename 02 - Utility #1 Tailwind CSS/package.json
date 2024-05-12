@@ -1,0 +1,10 @@
+{
+
+  "scripts": {
+    "watchrunner" : "tailwindcss -i ./namabebas.css -o ./style.css --watch"
+  },
+  "description": "",
+  "dependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
