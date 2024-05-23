@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1{
+        font-size: 10rem;
+    }
+
+    /* h1{
+        @apply text-6xl;
+    } */
+
+
+}
+
+@layer components {
+    .namabebas{
+        w-1 bg-red-300 rounded
+    }
+
+    /* pokoknya bisa bikin func lalu dipanggil, tujuannya untuk mempersingkat penulisan code yang digunakan ulang ulang */
+}
+
+/* 
+theme itu adalah untuk menggunakan utility custom yang kita buat sendiri disini
+
+contohnya di theme ada
+
+module.exports = {
+    theme:{
+        extend:{
+            colors:{
+                'namabebas' : 'red',
+            },
+        },
+    },
+},
+
+
+pemakaian disini :
+ @layer base{
+    color : theme(colors.namabebas);
+ }
+
+
+
+
+ screen :
+
+ @media screen(sm/md/lg/xl){
+ }
+*/

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar tailwindcss</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- jika ingin memasukkan css -->
+    <style type="text/tailwindcss">
+        /* *{
+            border: 1px solid red;
+        } */
+
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sedan+SC&display=swap" rel="stylesheet">
+
+
+
+
+    <!-- nambahin scrip yang ga ada 
+         seperti spacing 13 / m-13
+
+
+    -->
+
+    <script>
+        tailwind.config = {
+            theme : {
+                extends: {
+                    spacing : {
+                    '13' : '3.25rem',
+                    },
+
+                    fontFamily:{
+                        'poetsen1' :['"Poetsen One"', 'sans-serif'],
+                        'montserrat' : ['Montserrat'],
+                        'sedansc': ["Sedan SC"],
+                        'roboto' : ['"Roboto Condensed"'],
+                    },
+
+                },
+            },
+        }
+
+    </script>
+
+
+
+
+</head>
+<body>
+    <section class="mb-[1000px] mt-5 font-[montserrat] max-w-3xl mx-auto ">
+        <h2 class="mb-2 text-4xl  font-bold text-center leading-[45px]">Belajar Mengenal Typography pada <span class="text-transparent bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-6xl">TailwindCSS</span></h2>
+        <div class="mb-4 text-lg text-blue-700">
+            By Xnaizer ProLynx, 13 december 2002
+        </div>
+
+        <p class="mb-4">
+            Lorem ipsum dolor sit amet <a href="" class="underline font-semibold">consectetur</a> adipisicing elit. Obcaecati, aspernatur delectus, perspiciatis saepe minus earum eius rerum odit modi, corrupti et nulla in beatae quaerat labore ut quo neque consequuntur.
+        </p>
+        <blockquote class="italic font-light text-xl mb-4"> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptatem!" </blockquote>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi facilis vel impedit dolores inventore incidunt voluptate possimus, nulla rerum quas, aspernatur, adipisci dolore molestias doloremque obcaecati libero sequi est amet?
+        </p>
+
+    </section>
+
+
+
+
+
+
+    <section class="font-serif">
+        <h1 class="">Belajar Tailwind css ya guys</h1>
+
+        <h2>Belajar Spacing</h2>
+        <div class="mt-3 ml-5 ">Margin</div>
+        <!-- mx kiri dan kanan
+            my atas dan bawah
+
+
+            itu margintop 2 / 0.5px bernilai positif
+            jika ingin nilai negatif " -mt-2 "
+
+            -m-[nilaicustom px]
+        -->
+
+        <div class="p-10 h-40  w-[300px]" >padding</div>
+        <div class="max-w-xs">max-min-content</div>
+    </section>
+
+    
+
+
+
+
+
+
+
+
+</body>
+</html>

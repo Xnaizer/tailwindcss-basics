@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform , transition and animation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme:{
+                extend:{
+                    animation:{
+                        'spin-slow' : 'spin 4s linear infinite',
+
+                        'namabebas':'namabebas 1s ease-in-out infinite'
+                    },
+
+                    keyframes:{
+                        namabebas :{
+                           '0%, 100%' : {transform : 'rotate(-3deg)'},
+
+                           '50%' : {transform : 'rotate(3deg)'}
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+
+</head>
+
+<body>
+    <section class="">
+        <hr class="my-20">
+        <div class="w-40 h-40 bg-sky-400 mx-auto rounded shadow-lg scale-125 hover:rotate-45 hover:translate-x-28 transition hover:bg-pink-600 origin-bottom-left animate-spin"></div>
+        <!-- yang atas ini lag -->
+
+
+        <div class="w-40 h-40  mx-auto mt-20 rounded group">
+            <!-- color div diatas hapus aja  -->
+
+            <div class="w-40 h-40 bg-pink-400 mx-auto mt-20 rounded group-hover:rotate-180 origin-top-right transition duration-1000 ease-out "></div>
+        </div>
+
+        <div class="w-40 h-40  mx-auto mt-20 rounded group bg-slate-500 animate-namabebas"></div>
+
+        <div class="w-40 h-40  mx-auto mt-20 rounded group bg-slate-500 animate-ping"></div>
+
+        <div class="w-40 h-40  mx-auto mt-20 rounded group bg-slate-500 animate-bounce"></div>
+        
+        <div class="w-40 h-40  mx-auto mt-20 rounded group bg-slate-500 animate-spin-slow"></div>
+
+        <div class="w-auto p-2 bg-slate-300 mt-10 flex justify-center">
+            <span class="relative flex h-3 w-3 ">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500 "></span>
+            </span>
+        </div>
+
+
+
+    </section>
+
+</body>
+
+</html>
